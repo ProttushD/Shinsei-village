@@ -1,0 +1,276 @@
+@font-face {
+    font-family: main-font;
+    src: url(./fonts/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: main-font-2;
+    src: url(./fonts/Ethnocentric-Regular.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: main-font;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/main-image.png);
+    background-size: cover;
+
+
+}
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.087);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.main .overlay .nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+
+
+}
+
+.main .overlay .nav .logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+
+
+
+}
+
+.main .overlay .nav .logo img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+
+
+}
+
+.main .overlay .nav .list {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+
+}
+
+.main .overlay .nav .list h5 {
+    font-size: 15px;
+}
+
+.main .overlay .nav .list h5:hover{
+    color: #f6ca5c;
+    cursor: pointer;
+}
+
+.main .overlay .nav .social {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .overlay .nav .social .sm-logo i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.main .overlay .nav .social .sm-logo i:hover{
+    color: #f6ca5c;
+    cursor: pointer;
+}
+
+.main .overlay .center {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main .overlay .center img {
+    width: 500px;
+    display: block;
+    z-index: 999;
+}
+
+.main .overlay .center h1 {
+    font-family: main-font-2;
+    font-size: 80px;
+    position: absolute;
+    top: 16%;
+    z-index: 9;
+    word-spacing: 40px;
+    color: #fff;
+}
+
+.main .overlay .center h5 {
+    font-family: main-font-2;
+    font-size: 15px;
+    position: absolute;
+    top: 14.7%;
+    left: 18%;
+    z-index: 9;
+
+    color: #fff;
+}
+
+.main .overlay .center h5:nth-last-child(1) {
+    font-family:main-font-2;
+    font-size: 15px;
+    position: absolute;
+    top: 24.4%;
+    left: 57.6%;
+    z-index: 9;
+
+    color: #fff;
+}
+
+
+.main .overlay  .button{
+    background: linear-gradient(to top, #f6ca5c 10%, #f9da8e 80%);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    left: 43.6%;
+    z-index: 99999;
+    font-family:main-font-2;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.main .overlay .button:hover{
+    background: linear-gradient(to top, #f9da8e 10%, #f6ca5c 80%);
+    cursor: pointer;
+    color: #fff;
+}
+
+.main .overlay .bottom {
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    z-index: 9999;
+    background: linear-gradient(180deg,#2c252d 0%,#1e1a21 100%);
+    clip-path: polygon(0 0, 50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+}
+
+
+
+.main .overlay .bottom .heading{
+    width: 100%;
+    position: absolute;
+    bottom: 60%;
+    display:flex ;
+    justify-content: center;
+}
+
+.main .overlay .bottom .heading h5{
+    font-size: 20px;
+    color: #fff;
+    font-family:main-font-2;
+}
+
+.main .overlay .bottom .cl{
+width: 100%;
+
+    position: absolute;
+    bottom: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .overlay .bottom .cl .circle{
+  width: 10px;
+    height: 10px;
+    border: 1px solid #FFF;
+    background-color: #976c00;
+    transform: rotate(45deg);
+}
+
+.main .overlay .bottom .cl .cube{
+     width:20px;
+    height:20px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    background-color: #976c00;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.main .overlay .bottom .cl .line{
+width: 60%;
+height: 5px;
+background-color: #976c00;
+}
+
+.main .overlay .bottom .detail{
+    width: 100%;
+
+    bottom: 22%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 15%;
+    color: #FFF;
+}
+
+.main .overlay .bottom .detail .left{
+    width: 40%;
+    height: 100%;
+   
+}
+
+.main .overlay .bottom .detail .left p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.main .overlay .bottom .detail .right{
+    width: 40%;
+    height: 100%;
+
+}
+
+.main .overlay .bottom .detail .right p{
+    font-size: 13px;
+    text-align: justify;
+}
